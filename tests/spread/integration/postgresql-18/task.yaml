@@ -1,0 +1,6 @@
+summary: Integration tests for postgresql-18
+
+variants:
+  - bins
+
+execute: bash -eux ./test_${SPREAD_VARIANT}.sh

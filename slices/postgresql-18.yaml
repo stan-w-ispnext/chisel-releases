@@ -1,0 +1,83 @@
+package: postgresql-18
+
+essential:
+  postgresql-18_copyright:
+
+slices:
+  bins:
+    essential:
+      base-files_bin:
+      dash_bins:
+      libc6_libs:
+      libgssapi-krb5-2_libs:
+      libicu78_libs:
+      libldap2_libs:
+      liblz4-1_libs:
+      libnuma1_libs:
+      libpam0g_libs:
+      libpq5_libs:
+      libssl3t64_libs:
+      libsystemd0_libs:
+      liburing2_libs:
+      libxml2-16_libs:
+      libxslt1.1_libs:
+      libzstd1_libs:
+      postgresql-client-18_bins:
+      postgresql-client-18_pg-dumpall:
+      postgresql-18_data:
+      postgresql-18_modules:
+      tzdata_zoneinfo:
+      zlib1g_libs:
+    contents:
+      /usr/lib/postgresql/18/bin/initdb:
+      /usr/lib/postgresql/18/bin/oid2name:
+      /usr/lib/postgresql/18/bin/pg_archivecleanup:
+      /usr/lib/postgresql/18/bin/pg_checksums:
+      /usr/lib/postgresql/18/bin/pg_controldata:
+      /usr/lib/postgresql/18/bin/pg_createsubscriber:
+      /usr/lib/postgresql/18/bin/pg_ctl:
+      /usr/lib/postgresql/18/bin/pg_resetwal:
+      /usr/lib/postgresql/18/bin/pg_rewind:
+      /usr/lib/postgresql/18/bin/pg_test_fsync:
+      /usr/lib/postgresql/18/bin/pg_test_timing:
+      /usr/lib/postgresql/18/bin/pg_upgrade:
+      /usr/lib/postgresql/18/bin/pg_waldump:
+      /usr/lib/postgresql/18/bin/pg_walsummary:
+      /usr/lib/postgresql/18/bin/pgbench:
+      /usr/lib/postgresql/18/bin/postgres:
+      /usr/lib/postgresql/18/bin/vacuumlo:
+
+  data:
+    contents:
+      /usr/share/postgresql/18/postgres.bki:
+      /usr/share/postgresql/18/system_constraints.sql:
+      /usr/share/postgresql/18/system_functions.sql:
+      /usr/share/postgresql/18/system_views.sql:
+      /usr/share/postgresql/18/information_schema.sql:
+      /usr/share/postgresql/18/sql_features.txt:
+      /usr/share/postgresql/18/snowball_create.sql:
+      /usr/share/postgresql/18/postgresql.conf.sample:
+      /usr/share/postgresql/18/pg_hba.conf.sample:
+      /usr/share/postgresql/18/pg_ident.conf.sample:
+      /usr/share/postgresql/18/timezonesets/Default:
+      /usr/share/postgresql/18/tsearch_data/*.stop:
+      /usr/share/postgresql/18/extension/plpgsql.control:
+      /usr/share/postgresql/18/extension/plpgsql--1.0.sql:
+
+  modules:
+    contents:
+      /usr/lib/postgresql/18/lib/plpgsql.so:
+      /usr/lib/postgresql/18/lib/dict_snowball.so:
+      /usr/lib/postgresql/18/lib/utf8_and_*.so:
+      /usr/lib/postgresql/18/lib/cyrillic_and_mic.so:
+      /usr/lib/postgresql/18/lib/euc2004_sjis2004.so:
+      /usr/lib/postgresql/18/lib/euc_cn_and_mic.so:
+      /usr/lib/postgresql/18/lib/euc_jp_and_sjis.so:
+      /usr/lib/postgresql/18/lib/euc_kr_and_mic.so:
+      /usr/lib/postgresql/18/lib/euc_tw_and_big5.so:
+      /usr/lib/postgresql/18/lib/latin2_and_win1250.so:
+      /usr/lib/postgresql/18/lib/latin_and_mic.so:
+
+  copyright:
+    contents:
+      /usr/share/doc/postgresql-18/copyright:
